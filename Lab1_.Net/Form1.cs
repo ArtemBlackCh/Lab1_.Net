@@ -1,4 +1,4 @@
-namespace Lab1_.Net
+﻿namespace Lab1_.Net
 {
     public partial class Form1 : Form
     {
