@@ -59,5 +59,11 @@ namespace Lab1_.Net
             Form3 form = new Form3();
             form.Show();
         }
+
+        private void menuUnitTest_Click(object? sender, EventArgs e)
+        {
+            UnitTest form = new UnitTest();
+            form.Show();
+        }
     }
 }

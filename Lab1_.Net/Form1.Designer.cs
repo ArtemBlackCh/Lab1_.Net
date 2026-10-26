@@ -37,6 +37,7 @@
             menuArrays = new ToolStripMenuItem();
             menuOneDim = new ToolStripMenuItem();
             menuTwoDim = new ToolStripMenuItem();
+            menuUnitTest = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             menuStrip1.SuspendLayout();
@@ -175,7 +176,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuArrays });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuArrays, menuUnitTest });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -202,7 +203,14 @@
             menuTwoDim.Size = new Size(180, 22);
             menuTwoDim.Text = "Двовимірні масиви";
             menuTwoDim.Click += menuTwoDim_Click;
-            // 
+            //
+            // menuUnitTest
+            //
+            menuUnitTest.Name = "menuUnitTest";
+            menuUnitTest.Size = new Size(70, 20);
+            menuUnitTest.Text = "Unit test";
+            menuUnitTest.Click += menuUnitTest_Click;
+            //
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -252,5 +260,6 @@
         private ToolStripMenuItem menuArrays;
         private ToolStripMenuItem menuOneDim;
         private ToolStripMenuItem menuTwoDim;
+        private ToolStripMenuItem menuUnitTest;
     }
 }
